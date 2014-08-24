@@ -1,9 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
-
+## makeCacheMatrix creates matrix object which:
+##set the value of the matrix
+##get the value of the matrix
+##set the value of the solve 
+##get the value of the solve 
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -22,7 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Write a short comment describing this function
+## cacheSolve takes an special matrix object as input
+## and returns cached value of solved matrix
+## or (if it  hasn't already been calculated) calculates solved matrix
+## and saves solved value 
 
 cacheSolve <- function(x, ...) {
         s <- x$getsolve()
